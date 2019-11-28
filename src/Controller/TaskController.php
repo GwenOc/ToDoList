@@ -24,13 +24,15 @@ class TaskController extends AbstractController
     public function createAction(Request $request)
     {
         $task = new Task();
+        $user = $this->getUser();
         $form = $this->createForm(TaskType::class, $task);
 
         $form->handleRequest($request);
 
-        if ($form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
 
+            $task->setUser($user);
             $em->persist($task);
             $em->flush();
 
@@ -51,7 +53,7 @@ class TaskController extends AbstractController
 
         $form->handleRequest($request);
 
-        if ($form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
             $this->addFlash('success', 'La tâche a bien été modifiée.');
