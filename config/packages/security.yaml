@@ -5,9 +5,10 @@ security:
 
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        doctrine:
+        # used to reload user from session & other features (e.g. switch_user)
+        app_user_provider:
             entity:
-                class: App:User
+                class: App\Entity\User
                 property: username
     firewalls:
         dev:
@@ -15,6 +16,13 @@ security:
             security: false
         main:
             anonymous: lazy
+            guard:
+                authenticators:
+                    - App\Security\AppCustomAuthenticator
+            logout:
+                path: app_logout
+                # where to redirect after logout
+                # target: app_any_route
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
