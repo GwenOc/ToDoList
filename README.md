@@ -28,4 +28,5 @@ How to install
 
 `php bin/console doctrine:fixtures:load`
 
-Here we go !
+Here we go
+--------------
