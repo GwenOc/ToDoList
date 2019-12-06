@@ -13,6 +13,7 @@ How to install
 `composer install`
 
 * Create the .env
+
 `cp .env.test .env`
 
 * Configure the .env by switching db_user, db_password and db_name(line n°28) : 
