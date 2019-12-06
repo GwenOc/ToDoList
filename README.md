@@ -12,6 +12,9 @@ How to install
 
 `composer install`
 
+* Create the .env
+`cp .env.test .env`
+
 * Configure the .env by switching db_user, db_password and db_name(line n°28) : 
 
 `DATABASE_URL=mysql: //db_user:db_password@127.0.0.1:3306/db_name`
