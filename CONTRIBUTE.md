@@ -6,9 +6,9 @@ Petit guide à l'usage de l'équipe qui reprendra ce projet pour que le travail 
 
 1. Git tu utiliseras => le projet sur ta machine tu cloneras 
 
-   Le versioning via Git permet d'avoir un suivi des modifications, de gérer l'évolution du code et d'assurer facilment un back-up en cas de problème.
+   Le versioning via Git permet d'avoir un suivi des modifications, de gérer l'évolution du code et d'assurer facilement un back-up en cas de problème.
    
-   Commande : `git clone adresse du remote github`
+   Commande : `git clone <adresse du remote github>`
    
 2. Des issues tu créeras
 
@@ -25,19 +25,19 @@ Petit guide à l'usage de l'équipe qui reprendra ce projet pour que le travail 
 
    Le développement doit se faire à l'aide de branches annexes à la branche master pour pouvoir faire l'objet d'une revue et d'une validation afin de protéger le code principal d'une modification malheureuse, d'un effaçage sauvage etc.
    
-   * Creer des branches à l'aide de la commande `git branche nomDeMaBranche`, la commande `git checkout nom de la branche` permet de se rendre sur une branche surlaquelle on veut travailler.
+   * Creer des branches à l'aide de la commande `git checkout -b <nom de la branche>`.
    
    * Convention de nommage des branches :  celles-ci doivent être relatives idéalement à l'issue traitée ex:*templates* ou toute autre méthode en vigueur dans votre équipe.
    
-4. Des pull request tu feras => et des commit clairs et utilisables tu écriras 
+4. Des pull request tu feras => et des commits clairs et utilisables tu écriras 
 
    Toutes les modifications doivent faire l'objet d'une pull request pour pouvoir être revues et validées.
    
    * Une fois les modifications/ajouts/corrections terminées : ajouter les fichiers dans git si besoin `git add .`
    
-   * Partie importante le commit qui indique ce qui a été fait de façon explicite à bannir => "fix bug", "j'ai fait des trucs", "c'est ok maintenant". A l'idéal décrit la fonctionnalité que tu as créé, le bug que tu as corrigé, etc. ex: *ajout des lignes de code de traitement du formulaire dans le Xcontroller*.
+   * Partie importante le commit qui indique ce qui a été fait de façon explicite, à bannir => "fix bug", "j'ai fait des trucs", "c'est ok maintenant". A l'idéal décrit la fonctionnalité que tu as créé, le bug que tu as corrigé, etc. ex: *ajout des lignes de code de traitement du formulaire dans le Xcontroller*.
    
-   * Ensuite pousser son commit vers github `git push origin maBranche`
+   * Ensuite pousser son commit vers github `git push origin <maBranche>`
    
    * La pull request sera revue, les modifications validées ou non. Attendre le go définitif (pouce en l'air *Looks Good To Me*)
    
