@@ -35,7 +35,7 @@ Petit guide à l'usage de l'équipe qui reprendra ce projet pour que le travail 
    
    * Une fois les modifications/ajouts/corrections terminées : ajouter les fichiers dans git si besoin `git add .`
    
-   * Partie importante le commit qui indique ce qui a été fait de façon explicite à bannir => "fix bug", "j'ai fait des trucs", "c'est ok maintenant". A l'idéal décrit la fonctionnalité que tu as créé, le bug que tu as corrigé, etc. ex: *ajout des lignes de code de traitement du formulaire dans le Xcontroller*.
+   * Partie importante le commit qui indique ce qui a été fait de façon explicite, à bannir => "fix bug", "j'ai fait des trucs", "c'est ok maintenant". A l'idéal décrit la fonctionnalité que tu as créé, le bug que tu as corrigé, etc. ex: *ajout des lignes de code de traitement du formulaire dans le Xcontroller*.
    
    * Ensuite pousser son commit vers github `git push origin maBranche`
    
