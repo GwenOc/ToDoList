@@ -1,6 +1,6 @@
 <?php
 
-namespace App\tests\Form;
+namespace App\tests\UnitTests\Form;
 
 use App\Entity\User;
 use App\Form\UserType;

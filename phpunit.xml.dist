@@ -24,6 +24,9 @@
     <filter>
         <whitelist>
             <directory>src</directory>
+            <exclude>
+                <directory>DataFixtures</directory>
+            </exclude>
         </whitelist>
     </filter>
 
