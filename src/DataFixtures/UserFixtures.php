@@ -11,7 +11,7 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 /**
  * @codeCoverageIgnore
  */
-class AppFixtures extends Fixture
+class UserFixtures extends Fixture
 {
     private $passwordEncoder;
 
@@ -29,6 +29,7 @@ class AppFixtures extends Fixture
             $user->setUsername($faker->username);
             $user->setEmail($faker->Email);
             $user->setPassword($this->passwordEncoder->encodePassword($user, 'ToDo'));
+            $this->addReference('user' . $i, $user);
 
             $manager->persist($user);
         }
